@@ -24,5 +24,14 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin()
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    port: 8000,
+    hot: true,
+    open: true,
+    after: function(app, server) {
+      console.log("Good luck in development!!!\n");
+    }
+  }
 };
