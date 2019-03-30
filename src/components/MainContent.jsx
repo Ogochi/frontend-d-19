@@ -7,8 +7,14 @@ export default class MainContent extends React.Component {
         <div className="logo-container">
           <a className="logo">d'inks</a>
         </div>
-        <div className="content-container">
-        </div>
+        <section>
+          <div className="nav-container">
+            
+          </div>
+          <div className="content-container">
+
+          </div>
+        </section>
       </section>
     );
   }
