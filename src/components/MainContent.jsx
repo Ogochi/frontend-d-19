@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from './Nav.jsx';
+import DrinksView from './DrinksView.jsx';
 import { mainPageURL } from '../utils/consts.js'
 
 const sections = [
@@ -38,7 +39,7 @@ export default class MainContent extends React.Component {
             <Nav sections={this.state.navSections} onChange={this.onSectionChanged} />
           </div>
           <div className="content-container">
-
+            <DrinksView />
           </div>
         </section>
       </section>
