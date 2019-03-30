@@ -9,16 +9,8 @@ main {
   background-color: white;
 
   section {
-    background-color: #EEF8F6;
+    background-color: $color-aqua-squeeze;
     flex-grow: 1;
-    // width: 100%;
-
     margin: $main-padding $main-padding 0 $main-padding;
-  }
-
-  footer {
-    height: $main-padding;
-    margin: 0 $main-padding 0 $main-padding;
-    // width: 100%;
   }
 }

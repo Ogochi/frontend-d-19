@@ -54,7 +54,7 @@ module.exports = {
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
-    port: 8008,
+    port: 8001,
     hot: true,
     open: true,
     after: function(app, server) {
