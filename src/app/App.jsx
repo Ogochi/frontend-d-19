@@ -3,7 +3,12 @@ class App extends React.Component {
   render() {
     return (
       <main>
-        App
+        <section>
+          ddf
+        </section>
+        <footer>
+          asd
+        </footer>
       </main>
     );
   }
