@@ -1,0 +1,9 @@
+@import 'reset-css';
+
+div {
+  background-color: red;
+
+  &:hover {
+    background-color: blue;
+  }
+}
