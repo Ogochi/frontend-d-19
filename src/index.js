@@ -1,11 +1,10 @@
-import './styles/main.scss'
+import './scss/main.scss'
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-const title = 'My App';
+import App from './app/App.jsx'
 
 ReactDOM.render(
-  <div>{title}</div>,
+  <App/>,
   document.getElementsByTagName('body')[0]
 );
 
