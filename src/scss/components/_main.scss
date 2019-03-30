@@ -8,14 +8,14 @@ main {
 
   background-color: white;
 
-  &> section {
+  > section {
     display: flex;
     flex-grow: 1;
     background-color: $color-aqua-squeeze;
 
     margin: $main-padding $main-padding 0 $main-padding;
 
-    &> section {
+    > section {
       width: 100%;
       margin-right: 8%;
     }
@@ -24,6 +24,8 @@ main {
       &.nav-container {
         height: 15%;
         width: 100%;
+        display: flex;
+        align-items: flex-end;
       }
 
       &.content-container {

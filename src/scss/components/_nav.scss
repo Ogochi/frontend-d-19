@@ -1,0 +1,33 @@
+
+
+div.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  > * {
+    display: inline-block;
+
+    cursor: pointer;
+    color: $color-silver-chalice;
+
+    &:hover {
+      text-shadow: 2px 2px 2px $color-periwinkle-gray;
+    }
+
+    &.active {
+      position: relative;
+      padding-bottom: 0.3em;
+      color: black;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 80%;
+        border-bottom: 1px solid;
+      }
+    }
+  }
+}
