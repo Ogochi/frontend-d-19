@@ -9,8 +9,24 @@ main {
   background-color: white;
 
   section {
-    background-color: $color-aqua-squeeze;
+    display: flex;
     flex-grow: 1;
+    background-color: $color-aqua-squeeze;
+
     margin: $main-padding $main-padding 0 $main-padding;
+
+    div {
+      &.content-container {
+        width: 100%;
+      }
+
+      &.logo-container {
+        height: 100%;
+
+        * {
+          margin: 0 2em 0 2em;
+        }
+      }
+    }
   }
 }
