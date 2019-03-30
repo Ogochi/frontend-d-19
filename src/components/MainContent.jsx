@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from './Nav.jsx';
+import { mainPageURL } from '../utils/consts.js'
 
 const sections = [
   "Beer",
@@ -30,7 +31,7 @@ export default class MainContent extends React.Component {
     return (
       <section>
         <div className="logo-container">
-          <a className="logo">d'inks</a>
+          <a href={mainPageURL} className="logo">d'inks</a>
         </div>
         <section>
           <div className="nav-container">

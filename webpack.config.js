@@ -22,6 +22,9 @@ module.exports = {
             presets: [
               '@babel/preset-env',
               '@babel/preset-react'
+            ],
+            plugins: [
+              "@babel/plugin-proposal-class-properties"
             ]
           }
         }
@@ -42,10 +45,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      title: 'App',
-      meta: {
-        viewport: 'width=device-width, initial-scale=1'
-      }
+      template: './src/index.html'
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",

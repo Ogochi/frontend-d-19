@@ -5,7 +5,7 @@ import App from './App.jsx'
 
 ReactDOM.render(
   <App/>,
-  document.getElementsByTagName('body')[0]
+  document.getElementById('root')
 );
 
 module.hot.accept();
