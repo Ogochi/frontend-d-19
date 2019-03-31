@@ -42,7 +42,7 @@ module.exports = (env, options) => {
             {
               loader: 'postcss-loader', options: {
                 sourceMap: isProduction,
-                plugins: () => [require('autoprefixer')]
+                plugins: () => [require('autoprefixer'), require('postcss-font-magician')]
               }
             },
             { loader: 'sass-loader', options: { sourceMap: isProduction } }

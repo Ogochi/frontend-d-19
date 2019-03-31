@@ -1,6 +1,7 @@
 module.exports = {
   plugins: {
     'postcss-preset-env': {},
-    'autoprefixer': {}
+    'autoprefixer': {},
+    'postcss-font-magician': {}
   }
 }
