@@ -2,7 +2,6 @@
   position: relative;
   height: $drink-card-size;
   width: $drink-card-size;
-  overflow: hidden;
 
   margin: 0 5% 5% 0;
   cursor: pointer;
@@ -22,7 +21,9 @@
   }
 
   &__img {
-    transform: scale(0.6,0.6) translate(-40%, -40%);
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
   }
 
 
