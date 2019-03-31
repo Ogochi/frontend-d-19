@@ -2,12 +2,12 @@ import React from 'react';
 import DrinkCard from './DrinkCard.jsx';
 
 const drinks = [
-  ["bijou", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/bijou.jpg"],
-  ["egg nog", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/eggnogg.jpg"],
-  ["mojito", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/mojito.jpg"],
-  ["negroni", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/negroni.jpg"],
-  ["texas rattlesnake", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/rattlesnake.jpg"],
-  ["zinger", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/zinger.jpg"]
+  ["Bijou", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/bijou.jpg"],
+  ["Negroni", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/negroni.jpg"],
+  ["Mojito", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/mojito.jpg"],
+  ["Texas Rattlesnake", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/rattlesnake.jpg"],
+  ["Egg Nogg", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/eggnogg.jpg"],
+  ["Zinger", "https://raw.githubusercontent.com/daftcode/daftacademy-frontend_levelup-spring2019/master/prace_domowe/lekcja_2/projekt_graficzny/assets/zinger.jpg"]
 ]
 
 export default class DrinksView extends React.Component {
