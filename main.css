@@ -113,92 +113,106 @@ body {
   width: 100%;
   height: 100%; }
 
-a.logo {
+.logo {
   font-family: 'Esperanto Italic';
   font-size: 1.5em; }
 
-div.drink-card > span {
+.drink-card__text {
   color: white;
   font-size: 2.5em;
   font-weight: bold;
   line-height: 1.5em; }
 
-main {
+.logo {
+  display: inline-block;
+  transform: translateY(-50%);
+  border: solid 2.5px;
+  padding: 0.7em 2em 0.7em 2em;
+  color: inherit;
+  text-decoration: none;
+  margin: 0 2em 0 2em; }
+
+.drink-card {
+  position: relative;
+  height: 20em;
+  width: 20em;
+  overflow: hidden;
+  margin: 0 5% 5% 0;
+  cursor: pointer; }
+  .drink-card__text {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0; }
+  .drink-card__img {
+    transform: scale(0.6, 0.6) translate(-40%, -40%); }
+  .drink-card:hover {
+    border: 0.4em solid #F8DBB0;
+    height: calc(20em - (2 * 0.4em));
+    width: calc(20em - (2 * 0.4em)); }
+
+.main-container {
   display: flex;
   position: fixed;
   flex-flow: column;
   width: 100vw;
   height: 100vh;
   background-color: white; }
-  main > section {
+  .main-container__content {
     display: flex;
     flex-grow: 1;
     max-height: 100%;
     background-color: #EEF8F6;
     margin: 5em 5em 0 5em; }
-    main > section > section {
-      display: flex;
-      flex-direction: column;
-      overflow-x: hidden;
-      width: 100%;
-      max-width: 92%;
-      margin-right: 8%; }
-    main > section div {
-      max-height: 100%;
-      max-width: 100%; }
-      main > section div.nav-container {
-        height: 15%;
-        width: 100%;
-        display: flex;
-        align-items: flex-end; }
-      main > section div.content-container {
-        height: 70%;
-        width: 100%;
-        max-height: 70%; }
-      main > section div.logo-container * {
-        margin: 0 2em 0 2em; }
 
-footer {
+.navigable-content {
+  max-height: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 5em;
-  margin: 0 5em 0 5em;
-  padding: 0 2.5em 0 2.5em; }
-  footer div span.prefix {
-    color: #B0B0B0; }
-    footer div span.prefix::after {
-      content: ' '; }
-  footer div span.icons {
-    margin-left: 1em; }
-    footer div span.icons * {
-      color: #C1CFE8;
-      margin: 0 0.5em 0 0.5em; }
+  flex-direction: column;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 92%;
+  margin-right: 8%; }
+  .navigable-content__nav-container {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end; }
+  .navigable-content__content-container {
+    height: 70%;
+    width: 100%;
+    max-height: 70%; }
 
-a.logo {
-  display: inline-block;
-  transform: translateY(-50%);
-  border: solid 2.5px;
-  padding: 0.7em 2em 0.7em 2em;
-  color: inherit;
-  text-decoration: none; }
-
-div.nav {
+.nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%; }
-  div.nav > * {
+  width: 100%;
+  padding-right: 5px; }
+  .nav__elem {
     display: inline-block;
     cursor: pointer;
     color: #B0B0B0; }
-    div.nav > *:hover {
-      text-shadow: 2px 2px 2px #C1CFE8; }
-    div.nav > *.active {
+    .nav__elem:hover {
+      position: relative;
+      padding-bottom: 0.3em; }
+      .nav__elem:hover::after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 80%;
+        border-bottom: 1px solid; }
+    .nav__elem--active {
       position: relative;
       padding-bottom: 0.3em;
       color: black; }
-      div.nav > *.active::after {
+      .nav__elem--active::after {
         content: '';
         position: absolute;
         bottom: 0px;
@@ -206,26 +220,31 @@ div.nav {
         width: 80%;
         border-bottom: 1px solid; }
 
-div.drinks_view-container {
+.drinks_view {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-between;
   overflow-y: scroll;
   height: 90%;
   width: 100%;
   margin-top: 5%; }
 
-div.drink-card {
-  position: relative;
-  height: 20em;
-  width: 20em;
-  margin: 0 5% 5% 0; }
-  div.drink-card > span {
-    position: absolute;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); }
-  div.drink-card > img {
-    height: 100%;
-    width: 100%; }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5em;
+  margin: 0 5em 0 5em;
+  padding: 0 2.5em 0 2.5em; }
+  .footer__elem-prefix {
+    color: #B0B0B0; }
+    .footer__elem-prefix::after {
+      content: ' '; }
+  .footer__icons-container {
+    margin-left: 1em; }
+
+.footer-icon {
+  color: #C1CFE8;
+  margin: 0 0.5em 0 0.5em; }
 
