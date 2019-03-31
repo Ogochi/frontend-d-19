@@ -30,15 +30,15 @@ export default class MainContent extends React.Component {
 
   render() {
     return (
-      <section>
-        <div className="logo-container">
+      <section className="main-container__content">
+        <div>
           <a href={mainPageURL} className="logo">d'inks</a>
         </div>
-        <section>
-          <div className="nav-container">
+        <section className="navigable-content">
+          <div className="navigable-content__nav-container">
             <Nav sections={this.state.navSections} onChange={this.onSectionChanged} />
           </div>
-          <div className="content-container">
+          <div className="navigable-content__content-container">
             <DrinksView />
           </div>
         </section>

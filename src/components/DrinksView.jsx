@@ -13,7 +13,7 @@ const drinks = [
 export default class DrinksView extends React.Component {
   render() {
     return (
-      <div className="drinks_view-container">
+      <div className="drinks_view">
         {
           drinks.map(drink =>
             (<DrinkCard key={drink[0]} name={drink[0]} img={drink[1]} />)

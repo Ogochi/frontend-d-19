@@ -1,11 +1,11 @@
-div.drink-card {
+.drink-card {
   position: relative;
   height: 20em;
   width: 20em;
 
   margin: 0 5% 5% 0;
 
-  > span {
+  &__text {
     position: absolute;
     text-align: center;
 
@@ -14,7 +14,7 @@ div.drink-card {
     transform: translate(-50%, -50%);
   }
 
-  > img {
+  &__img {
     height: 100%;
     width: 100%
   }

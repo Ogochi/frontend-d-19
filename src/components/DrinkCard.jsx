@@ -6,8 +6,8 @@ export default class DrinkCard extends React.Component {
 
     return (
       <div className="drink-card">
-        <img src={img} />
-        <span>{name}</span>
+        <img src={img} className="drink-card__img" />
+        <span className="drink-card__text">{name}</span>
       </div>
     );
   }

@@ -11,16 +11,16 @@ export default class Nav extends React.Component {
   }
 
   renderSection = section => {
-    let classes = "";
+    let className = "nav__elem";
     if (section === this.state.currentSection) {
-      classes += "active";
+      className += "--active";
     }
 
     return (
       <div
-        className={classes}
+        className={className}
         onClick={this.onSectionClicked}
-        key={"section-" + section}
+        key={"section-nav-" + section}
       >
         {section}
       </div>

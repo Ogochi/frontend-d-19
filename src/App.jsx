@@ -5,7 +5,7 @@ import MainContent from './components/MainContent.jsx'
 export default class App extends React.Component {
   render() {
     return (
-      <main>
+      <main className="main-container">
         <MainContent />
         <Footer />
       </main>

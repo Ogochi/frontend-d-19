@@ -5,9 +5,10 @@
 @import 'base/scrollbar';
 @import 'base/typography';
 
-@import 'components/main';
-@import 'components/footer';
 @import 'components/logo';
-@import 'components/nav';
-@import 'components/drinks-view';
 @import 'components/drink-card';
+
+@import 'layout/main-container';
+@import 'layout/nav';
+@import 'layout/drinks-view';
+@import 'layout/footer';
