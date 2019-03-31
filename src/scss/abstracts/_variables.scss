@@ -1,6 +1,11 @@
 
 $main-padding: 5em;
 
+$drink-card-border-size: 0.4em;
+$drink-card-size: 20em;
+$drink-card-size-with-border: calc(#{$drink-card-size} - (2 * #{$drink-card-border-size}));
+
 $color-aqua-squeeze: #EEF8F6;
 $color-silver-chalice: #B0B0B0;
 $color-periwinkle-gray: #C1CFE8;
+$color-peach-yellow: #F8DBB0;

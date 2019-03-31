@@ -5,12 +5,12 @@ body {
   height: 100%;
 }
 
-a.logo {
+.logo {
   font-family: 'Esperanto Italic';
   font-size: 1.5em;
 }
 
-div.drink-card > span {
+.drink-card__text {
   color: white;
   font-size: 2.5em;
   font-weight: bold;

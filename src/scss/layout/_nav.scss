@@ -1,10 +1,25 @@
 
+@mixin short-underline($width) {
+  position: relative;
+  padding-bottom: 0.3em;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: $width;
+    border-bottom: 1px solid;
+  }
+}
 
 .nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
+
+  padding-right: 5px;
 
   &__elem {
     display: inline-block;
@@ -13,22 +28,12 @@
     color: $color-silver-chalice;
 
     &:hover {
-      text-shadow: 2px 2px 2px $color-periwinkle-gray;
+      @include short-underline(80%);
     }
 
-    &active {
-      position: relative;
-      padding-bottom: 0.3em;
+    &--active {
+      @include short-underline(80%);
       color: black;
-
-      &::after {
-        content: '';
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        width: 80%;
-        border-bottom: 1px solid;
-      }
     }
   }
 }
