@@ -223,6 +223,11 @@ body {
     height: calc(19vw - (2 * 0.4em));
     width: calc(19vw - (2 * 0.4em)); }
 
+.clock {
+  position: absolute;
+  font-size: 2em;
+  font-weight: bold; }
+
 .main-container {
   display: flex;
   position: fixed;
