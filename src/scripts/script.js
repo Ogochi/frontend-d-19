@@ -1,9 +1,28 @@
 function promiseAll(promises) {
-  // Twój kod tu
+  return new Promise(async (resolve, reject) => {
+    let promisesResults = [];
+    for (let i = 0; i < promises.length; i++) {
+      try {
+        promisesResults.push(await promises[i]);
+      } catch(error) {
+        reject(error);
+      }
+    };
+
+    resolve(promisesResults);
+  });
 }
 
 function promiseRace(promises) {
-  // Twój kod tu
+  return new Promise((resolve, reject) => {
+    promises.forEach(async promise => {
+      try {
+        resolve(await promise)
+      } catch (error) {
+        reject(error);
+      }
+    });
+  });
 }
 
 
