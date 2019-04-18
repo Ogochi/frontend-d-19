@@ -34,9 +34,13 @@ export default class Clock extends React.Component {
   }
 
   componentDidMount() {
-    window.setInterval(() =>
-      this.setState(prevState => prevState.generator.next().value), 1000 // 1 sec
-    );
+    let intervalFunc = () => this.setState(prevState => prevState.generator.next().value);
+    this.setState({ intervalFunc })
+    setInterval(intervalFunc, 1000); // 1 sec
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.state.intervalFunc);
   }
 
   render() {
