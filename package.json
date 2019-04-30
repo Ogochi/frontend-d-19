@@ -7,7 +7,7 @@
     "build_prod": "webpack --mode production",
     "clean": "rm -rf dist",
     "start": "webpack-dev-server --mode development",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "Michał Ołtarzewski",
   "license": "ISC",
@@ -43,10 +43,11 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.0.0",
-    "@babel/plugin-proposal-class-properties": "^7.4.0",
     "babel-loader": "^8.0.5",
+    "jest": "^24.7.1",
     "react-hot-loader": "^4.8.1",
     "webpack-dev-server": "^3.2.1"
   }
